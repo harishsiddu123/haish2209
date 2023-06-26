@@ -7,7 +7,7 @@ const upload = multer();
 
 const app = express();
 app.use(cors());
-app.use(express.static(path.join(__dirname),"./client/build"));
+app.use(express.static(path.join(__dirname,"./client/build")));
 app.listen(9999,()=>{
     console.log("listening to port 9999");
 })
